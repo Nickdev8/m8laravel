@@ -13,7 +13,7 @@ class TshirtFactory extends Factory
         return [
             'text_line_1' => fake()->words(3, true),
             'text_line_2' => fake()->sentence(4),
-            'image_path' => 'tshirts/black.jpeg',
+            'image_path' => 'images/tshirts/black.jpeg',
             'category_id' => Category::factory(),
             'color_id' => Color::factory(),
         ];

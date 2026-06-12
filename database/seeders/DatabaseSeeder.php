@@ -28,16 +28,16 @@ class DatabaseSeeder extends Seeder
         ])->map(fn (string $name) => Color::factory()->create(['name' => $name]));
 
         $images = [
-            'tshirts/black.jpeg',
-            'tshirts/blue2.jpeg',
-            'tshirts/bluebari.jpeg',
-            'tshirts/brow.jpeg',
-            'tshirts/green.jpeg',
-            'tshirts/green2.jpeg',
-            'tshirts/grey.jpeg',
-            'tshirts/grey2.jpeg',
-            'tshirts/redbair.jpeg',
-            'tshirts/torquise.jpeg',
+            'images/tshirts/black.jpeg',
+            'images/tshirts/blue2.jpeg',
+            'images/tshirts/bluebari.jpeg',
+            'images/tshirts/brow.jpeg',
+            'images/tshirts/green.jpeg',
+            'images/tshirts/green2.jpeg',
+            'images/tshirts/grey.jpeg',
+            'images/tshirts/grey2.jpeg',
+            'images/tshirts/redbair.jpeg',
+            'images/tshirts/torquise.jpeg',
         ];
 
         shuffle($images);
