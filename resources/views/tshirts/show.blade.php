@@ -16,12 +16,16 @@
 
         <p>
             <strong>Category:</strong>
-            {{ $tshirt->category->name }}
+            <a href="{{ route('categories.show', $tshirt->category) }}">
+                {{ $tshirt->category->name }}
+            </a>
         </p>
 
         <p>
             <strong>Color:</strong>
-            {{ $tshirt->color->name }}
+            <a href="{{ route('colors.show', $tshirt->color) }}">
+                {{ $tshirt->color->name }}
+            </a>
         </p>
 
         <a class="button" href="{{ route('tshirts.index') }}">

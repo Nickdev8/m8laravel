@@ -12,8 +12,12 @@
     @endif
 
     <p>
-        <span class="tag">{{ $tshirt->category->name }}</span>
-        <span class="tag">{{ $tshirt->color->name }}</span>
+        <a class="tag" href="{{ route('categories.show', $tshirt->category) }}">
+            {{ $tshirt->category->name }}
+        </a>
+        <a class="tag" href="{{ route('colors.show', $tshirt->color) }}">
+            {{ $tshirt->color->name }}
+        </a>
     </p>
 
     <a class="button" href="{{ route('tshirts.show', $tshirt) }}">

@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Tshirt extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'text_line_1',
         'text_line_2',
