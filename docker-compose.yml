@@ -1,9 +1,9 @@
 services:
   app:
     build: .
-    container_name: tshirt-site
+    container_name: m8laravel
     ports:
-      - "3019:8000"
+      - "127.0.0.1:3025:8000"
     volumes:
       - .:/app
       - /app/vendor
