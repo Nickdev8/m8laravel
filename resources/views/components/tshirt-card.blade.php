@@ -1,4 +1,10 @@
 <article class="card">
+    <img
+        class="tshirt-image"
+        src="{{ asset($tshirt->image_path) }}"
+        alt="{{ $tshirt->text_line_1 }}"
+    >
+
     <h2>{{ $tshirt->text_line_1 }}</h2>
 
     @if ($tshirt->text_line_2)

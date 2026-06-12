@@ -46,6 +46,20 @@
             padding: 16px;
         }
 
+        .tshirt-image {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            background: #f8f8f8;
+            border-radius: 6px;
+        }
+
+        .tshirt-image-detail {
+            max-width: 420px;
+            height: 420px;
+        }
+
         .tag {
             display: inline-block;
             background: #eee;

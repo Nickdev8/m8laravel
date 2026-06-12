@@ -2,6 +2,12 @@
 
 @section('content')
     <article class="card">
+        <img
+            class="tshirt-image tshirt-image-detail"
+            src="{{ asset($tshirt->image_path) }}"
+            alt="{{ $tshirt->text_line_1 }}"
+        >
+
         <h1>{{ $tshirt->text_line_1 }}</h1>
 
         @if ($tshirt->text_line_2)

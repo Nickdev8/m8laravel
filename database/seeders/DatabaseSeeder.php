@@ -246,5 +246,26 @@ class DatabaseSeeder extends Seeder
             'category_id' => $basic->id,
             'color_id' => $navy->id,
         ]);
+
+        $images = [
+            'tshirts/black.jpeg',
+            'tshirts/blue2.jpeg',
+            'tshirts/bluebari.jpeg',
+            'tshirts/brow.jpeg',
+            'tshirts/green.jpeg',
+            'tshirts/green2.jpeg',
+            'tshirts/grey.jpeg',
+            'tshirts/grey2.jpeg',
+            'tshirts/redbair.jpeg',
+            'tshirts/torquise.jpeg',
+        ];
+
+        shuffle($images);
+
+        Tshirt::orderBy('id')->get()->each(
+            fn (Tshirt $tshirt, int $index) => $tshirt->update([
+                'image_path' => $images[$index % count($images)],
+            ])
+        );
     }
 }
